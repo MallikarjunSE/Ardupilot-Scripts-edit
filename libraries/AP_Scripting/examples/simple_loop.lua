@@ -1,7 +1,7 @@
 -- This script is an example of saying hello.  A lot.
 
 function update() -- this is the loop which periodically runs
-  gcs:send_text(0, "Sierra Aero") -- send the traditional message
+  gcs:send_text(0, "Sierra Aerospace") -- send the traditional message
   return update, 1000 -- reschedules the loop
 end
 
