@@ -6,7 +6,7 @@ the LED interface for WS2812 LEDs
 --[[
 for this demo we will use a single strip with 30 LEDs
 --]]
-local num_leds = 1
+local num_leds = 4
 
 --[[
  use SERVOn_FUNCTION 120 for LED. We can control up to 16 separate strips of LEDs
