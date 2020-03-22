@@ -25,8 +25,8 @@ chan = chan + 1
 gcs:send_text(6, "LEDs: chan=" .. tostring(chan))
 
 -- initialisation code
---serialLED:set_num_neopixel(chan,  num_leds)
-serialLED:set_num_profiled(chan,  num_leds)
+serialLED:set_num_neopixel(chan,  num_leds)
+--serialLED:set_num_profiled(chan,  num_leds)
 
 -- constrain a value between limits
 function constrain(v, vmin, vmax)
