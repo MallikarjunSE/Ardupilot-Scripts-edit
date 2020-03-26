@@ -9,25 +9,25 @@ function update() -- this is the loop which periodically runs
   if count == 1 then
     -- solid red
     -- red,green,blue,rate hz, duration ms
-    notify:handle_rgb(255,0,0,0)
+    notify:handle_rgb(255,0,0,5)
   elseif count == 2 then
     -- solid green
-    notify:handle_rgb(0,255,0,0)
+    notify:handle_rgb(0,255,0,5)
   elseif count == 3 then
     -- solid blue
-    notify:handle_rgb(0,0,255,0)
+    notify:handle_rgb(0,0,255,5)
   elseif count == 4 then
     -- 1hz red  + green
-    notify:handle_rgb(255,255,0,1)
+    notify:handle_rgb(255,255,0,5)
   elseif count == 5 then
     -- 1hz green + blue
-    notify:handle_rgb(0,255,255,1)
+    notify:handle_rgb(0,255,255,5)
   elseif count == 6 then
     -- 1hz red + blue
-    notify:handle_rgb(255,0,255,1)
+    notify:handle_rgb(255,0,255,5)
   elseif count == 7 then
     -- fast white
-    notify:handle_rgb(255,255,255,10)
+    notify:handle_rgb(255,255,255,5)
     count = 0
   end
 
