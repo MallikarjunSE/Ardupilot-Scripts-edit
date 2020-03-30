@@ -1,9 +1,9 @@
 current = ahrs:prearm_healthy()
 
 function update()
-    if current==true then 
+    if current==false then 
         notify:handle_rgb(0,255,0,5)
-        elseif current==false then
+        elseif current==true then
         notify:handle_rgb(255,0,0,5)
         end
     return update, 15000
