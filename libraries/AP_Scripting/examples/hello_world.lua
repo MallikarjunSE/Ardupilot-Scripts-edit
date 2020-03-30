@@ -1,4 +1,4 @@
-current = ahrs:prearm_healthy
+current = ahrs:prearm_healthy()
 
 function update()
     if current=true then 
