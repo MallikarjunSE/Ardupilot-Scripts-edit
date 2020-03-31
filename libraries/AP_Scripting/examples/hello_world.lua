@@ -3,7 +3,7 @@ Health = ahrs:prearm_healthy()
 function update()
     if health==true then 
         notify:handle_rgb(255,0,0,10)
-        else health==false then
+        elseif health==false then
         notify:handle_rgb(0,0,255,10)
         end
     return update, 15000
