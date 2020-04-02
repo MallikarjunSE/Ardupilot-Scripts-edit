@@ -14,6 +14,5 @@ function upadte()
         notify:play_tune(TUNE_AWAY)
         gcs:send_text(1, "High Pitch Angle")
         end
-    return update, 10000
-    end
-Return update()
+end
+return update, 10000
