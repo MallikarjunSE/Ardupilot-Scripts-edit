@@ -1,13 +1,19 @@
-Health = ahrs:prearm_healthy()
+local TUNE_POINT = "MBNT255>A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8A#8"
+local TUNE_TOWARDS = "MFT100L8>B"
+local TUNE_AWAY = "MFT100L4>A#B#"
 
-function update()
-    if health==true then 
-        notify:handle_rgb(0,255,0,10)
-        gcs:send_text(1, "Vehicle ready to fly")
-        else
-        notify:handle_rgb(255,0,0,10)
-        gcs:send_text(1, "Wait for AHRS to settle")
+roll = ahrs:get_roll()
+pitch = ahrs:get_pitch()
+
+function upadte()
+    if roll > 0.5 then
+        notify:play_tune(TUNE_POINT)
+        gcs:send_text(1, "High Roll Angle")
         end
-    return update, 15000
+    if pitch > 0.5 then
+        notify:play_tune(TUNE_AWAY)
+        gcs:send_text(1, "High Pitch Angle")
+        end
+    return update, 10000
     end
-return update()
+Return update()
