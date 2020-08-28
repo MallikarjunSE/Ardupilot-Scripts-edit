@@ -8,6 +8,7 @@ if not chan then
 chan=chan+1
 gcs:send_text(6, "LEDs:chan=" ..tostring(chan))
 serialLED:set_num_neopixel(chan, num_leds)
+
 function update()
     if health==true then 
         serialLED:set_rgb(0,255,0,10)
