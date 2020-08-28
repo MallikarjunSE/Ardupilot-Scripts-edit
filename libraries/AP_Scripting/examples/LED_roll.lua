@@ -12,7 +12,7 @@ local num_leds = 4
  use SERVOn_FUNCTION 120 for LED. We can control up to 16 separate strips of LEDs
  by putting them on different channels
 --]]
-local chan = SRV_Channels:find_channel(120)
+local chan = SRV_Channels:find_channel(94)
 
 if not chan then
     gcs:send_text(6, "LEDs: channel not set")
