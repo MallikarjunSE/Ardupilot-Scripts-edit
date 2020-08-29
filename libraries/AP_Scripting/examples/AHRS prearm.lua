@@ -12,9 +12,9 @@ serialLED:set_RGB(chan, led, r, g, b)
 
 function update()
     if health==true then 
-        serialLED:set_rgb(chan,1,255,0,0)
+        serialLED:set_RGB(chan,1,255,0,0)
         else
-        serialLED:set_rgb(chan,2,0,0,255)
+        serialLED:set_RGB(chan,2,0,0,255)
         gcs:send_text(1, "Wait for AHRS to settle")
         end
     return update, 15000
