@@ -14,7 +14,7 @@ function update() -- this is the loop which periodically runs
       count = 0
   end
 
-  return update, 15000 -- reschedules the loop in 15 seconds
+  return update, 3000 -- reschedules the loop in 15 seconds
 
 end
 
